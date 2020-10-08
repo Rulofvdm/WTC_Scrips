@@ -9,6 +9,7 @@ __Setup:__
  - Run setup.sh
     
 __Use:__  
+
 __update_review_details.sh__  
   - Go to `cd ~/`.  
   - run `./update_reviews_info.sh`  
