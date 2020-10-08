@@ -5,6 +5,7 @@ Some scripts I wrote to help me get through the reviews process quicker.
 __Setup:__
   - Download : https://github.com/Rulofvdm/WTC_Scrips/archive/main.zip
   - Extract
+  - Run `cd ~/Downloads/WTC_Scrips-main`
   - Run setup.sh
     
 __Use:__</br></br>
