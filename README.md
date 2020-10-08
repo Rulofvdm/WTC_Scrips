@@ -7,14 +7,14 @@ __Setup:__
   - Extract
   - Run setup.sh
     
-__Use:__</br>
+__Use:__</br></br>
 	__update_review_details.sh__</br>
 	- Go to `cd ~/`.</br>
 	- run `./update_reviews_info.sh`</br>
 		__YOU DON'T NEED TO RUN THIS IF YOU DON'T WANT IT. IT'S JUST USED TO HAVE AN EASY WAY TO ACCESS USERNAMES AND HASHES IN ONE PLACE__</br>
 		__NOTE: THIS TAKES A WHILE SO RUN IT IN A SEPERATE WINDOW__</br>
 		THIS PUTS OUT THE OUTPUT OF ALL review_details COMMANDS IN A FILE FOR EASY ACCESS TO USERNAMES AND HASHES</br>
-		MIGHT BECOME OBSOLETE IF UNCLE WOLF IMPLEMENTS THE --oneline FEATURE (ಥ﹏ಥ) </br>
+		MIGHT BECOME OBSOLETE IF UNCLE WOLF IMPLEMENTS THE --oneline FEATURE (ಥ﹏ಥ) </br></br>
 	__do_review.sh(the useful one)__</br>
 	- Open a seperate terminal.</br>
 	- Run ```./do_review.sh```</br>
