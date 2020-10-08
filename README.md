@@ -9,7 +9,7 @@ __Setup:__
     
  __Use:__
  
-  __update_review_details.sh__
+  <b>update_review_details.sh</b>
   
     ```- Go to `cd ~/`.
     - run `./update_reviews_info.sh`
