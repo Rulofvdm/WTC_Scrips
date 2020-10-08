@@ -9,7 +9,7 @@ __Setup:__
   - Run setup.sh
     
 __Use:__</br></br>
-	__update_review_details.sh__</br>
+	</ensp>__update_review_details.sh__</br>
 	- Go to `cd ~/`.</br>
 	- run `./update_reviews_info.sh`</br>
 		__YOU DON'T NEED TO RUN THIS IF YOU DON'T WANT IT. IT'S JUST USED TO HAVE AN EASY WAY TO ACCESS USERNAMES AND HASHES IN ONE PLACE__</br>
