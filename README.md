@@ -9,7 +9,7 @@ __Setup:__
  - Run setup.sh
     
 __Use:__  
- - __update_review_details.sh__  
+__update_review_details.sh__  
   - Go to `cd ~/`.  
   - run `./update_reviews_info.sh`  
     __YOU DON'T NEED TO RUN THIS IF YOU DON'T WANT IT. IT'S JUST USED TO HAVE AN EASY WAY TO ACCESS USERNAMES AND HASHES IN ONE PLACE__  
@@ -17,7 +17,7 @@ __Use:__
     THIS PUTS OUT THE OUTPUT OF ALL review_details COMMANDS IN A FILE FOR EASY ACCESS TO USERNAMES AND HASHES
     MIGHT BECOME OBSOLETE IF UNCLE WOLF IMPLEMENTS THE --oneline FEATURE (ಥ﹏ಥ)  
     
- - __do_review.sh(the useful one)__  
+__do_review.sh(the useful one)__  
   - Open a seperate terminal.  
   - Run `./do_review.sh`  
   - Give reviewee username (This does nothing, yet, if you didn't run the update_review_details.sh)  
