@@ -9,8 +9,8 @@ __Setup:__
     
  __Use:__
   __update_review_details.sh__
-    - Go to ```cd ~/```
-    - run ```./update_reviews_info.sh``` 
+    - Go to ```cd ~/```.
+    - run ```./update_reviews_info.sh``` .
 
         __YOU DON'T NEED TO RUN THIS IF YOU DON'T WANT IT. IT'S JUST USED TO HAVE AN EASY WAY TO ACCESS USERNAMES AND HASHES IN ONE PLACE__
         __NOTE: THIS TAKES A WHILE SO RUN IT IN A SEPERATE WINDOW__
