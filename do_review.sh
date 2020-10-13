@@ -6,8 +6,6 @@ read -p 'Hash: ' hash
 wtc-lms review_details $hash | grep 'Problem:'
 site=$(wtc-lms review_details $hash | grep 'Review Guidelines:' | tr ' ' "\n" | tail -n 1)
 google-chrome $site > /dev/null 2>&1 &
-chrome_pid=$!
-wait $chrome_pid
 read -p 'Sync[y/n]: ' sync
 if [ "$sync" == "y" ]
 then
