@@ -32,3 +32,9 @@ __do_review.sh(the useful one)__:
    where you basically need to type in your comment and then grade  
    which will then be automatically posted.  
   - After all that the repo is deleted as it would no longer be needed.  
+  
+__run_histories.sh__:
+  - Well this is easy. Run it and witness all the histories of the pojects
+  
+__generate_slack_usernames.sh__:
+  - Oof, this one is nasty. So bascally it generates the slack usenames of the people you need to review. It does this from the file that update_review_details.sh creates. Usefull for the slack app, multidm, which is used to mass dm some people.
