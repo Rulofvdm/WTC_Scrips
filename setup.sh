@@ -1,4 +1,4 @@
-mv ./o_review.sh ~/
+mv ./do_review.sh ~/
 mv ./update_reviews_info.sh ~/
 cd ~/
 chmod +x do_review.sh
