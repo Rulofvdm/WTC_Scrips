@@ -31,4 +31,9 @@ __do_review.sh(the useful one)__:
   - When you're done with the review return to this terminal  
    where you basically need to type in your comment and then grade  
    which will then be automatically posted.  
-  - After all that the repo is deleted as it would no longer be needed.  
+  - After all that the repo is deleted as it would no longer be needed.
+
+__all_project_history.sh(extra)__:  
+  - Open a seperate terminal.  
+  - Run `./all_project_history.sh`  
+  - For those that want to see all of their project history for semester 1
