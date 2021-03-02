@@ -3,9 +3,9 @@ Some scripts I wrote to help me get through the reviews process quicker.
 
 # Do_review script 0.1
 __Setup:__
- - Download : https://github.com/Rulofvdm/WTC_Scrips/archive/main.zip
+ - Download : https://github.com/wethinkcode/student_scrips.git
  - Extract
- - Run `cd ~/Downloads/WTC_Scrips-main`
+ - Run `cd ~/Downloads/student_scrips/`
  - Run setup.sh
     
 __Use:__  
@@ -37,3 +37,14 @@ __all_project_history.sh(extra)__:
   - Open a seperate terminal.  
   - Run `./all_project_history.sh`  
   - For those that want to see all of their project history for semester 1
+
+__view_reviews.sh(on available reviews)__:  
+  - Open a seperate terminal.  
+  - Run `./view_reviews.sh -p "FizzBuzz" -n 2 -a`  
+  - the -n flag is optional to change the amount of reviews you will see, default is 3
+  - the -a flag is also optional and instead of showing you the reviews it will ACCEPT them (use with or without the n flag)
+  - It is to view available reviews.
+  - BEWARE: the -a flag WILL ACCEPT reviews. DO NOT use the -a flag if you just want to view reviews.
+  - Otherwise you can run `./view_reviews -u "username"`
+  - To view the reviews you have been assigned for that user.
+  - Use at own risk. If you mess up your number of accepted reviews, that's on you,
