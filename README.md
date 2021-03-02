@@ -1,5 +1,5 @@
 # WTC_Scripts
-Some scripts wroten to help get through the reviews process quicker.
+Some scripts writen to help get through the reviews process quicker.
 
 # Do_review script 0.1
 __Setup:__
