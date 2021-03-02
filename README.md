@@ -1,7 +1,7 @@
 # WTC_Scripts
 Some scripts writen to help get through the reviews process quicker.
 
-# Do_review script 0.1
+# Scripts 0.1
 __Setup:__
  - Download : https://github.com/wethinkcode/student_scrips.git
  - Extract
