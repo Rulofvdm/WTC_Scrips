@@ -1,7 +1,3 @@
-# Disclaimer
-Heyo, a frend here. The idea of these scripts was to have some script wrappers that could be accessed by all students to automate some things in the lms.
-Most of this hasn't been updated since somewhere in 2020 ish. The LMS has also updated a lot since then and have come far regarding ui and ux so this needs a total rework. If you feel up to it have at it and refactor the project to work with the new lms.
-
 # WTC_Scripts
 Some scripts writen to help get through the reviews process quicker.
 
