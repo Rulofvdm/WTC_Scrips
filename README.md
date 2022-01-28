@@ -18,7 +18,7 @@
 
 <br />
 <p align="center">
-  <a href="https://wethinkcode.co.za">
+  <a href="https://github.com/Kellan2002/Kellans-Scripts">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -29,9 +29,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/wethinkcode/student_scrips/issues">Report Bug</a>
+    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Report Bug</a>
     ·
-    <a href="https://github.com/wethinkcode/student_scrips/issues">Request Feature</a>
+    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Request Feature</a>
     .
   </p>
 </p>
@@ -42,7 +42,7 @@
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#About The Project">About The Project</a>
+      <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -50,8 +50,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#steps-to-run-script-on-wsl">WSL Install</a></li>
-        <li><a href="#steps-to-run-script-on-linux">Linux</a></li>
+        <li><a href="#wsl">WSL Install</a></li>
+        <li><a href="#linux">Linux</a></li>
       </ul>
     </li>
     <!-- <li><a href="#usage">Usage</a></li> -->
@@ -75,7 +75,7 @@ Currently LMS is built to run on unix operating systems running a GNOME desktop 
 * [Bash]()
 * [Batch]()
 
-<!-- MACOS -->
+<!-- GETTING STARTED -->
 
 # Getting Started
 
