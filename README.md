@@ -1,3 +1,6 @@
+#NOTE
+This has since been forked and has been kept updated to accommodate newer lms versions. You can find it here: https://github.com/wethinkcode/student_scrips
+
 # WTC_Scripts
 Some scripts I wrote to help me get through the reviews process quicker.
 
