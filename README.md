@@ -105,25 +105,9 @@ bash ./install_wtc_lms
 
 #### Linux:
 
-1. Clone repository
+1. Will be added **SOON**!!!
 
-```bash
-git clone https://github.com/wethinkcode/student_scrips ~/wtc-scripts
-```
 
-2. Change to the directory the repo is now stored.
-
-```bash
-cd ~/wtc-scripts
-```
-
-3. Run script with bash.
-   
-   > *Do not run the script as root (i.e. with sudo)*
-
-```bash
-bash ./install_wtc_lms
-```
 
 ## update_review_details.sh:
 
@@ -219,7 +203,9 @@ bash ./install_wtc_lms
 
 # TODO List
 
-- Install LMS Script:
+- **install_wtc_lms.sh**:
+  
+  . Get script to update wtc-lms if already installed
   
   . Fix WSL error when there is a space seperating a 2 worded username
   
