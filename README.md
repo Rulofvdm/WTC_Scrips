@@ -42,7 +42,7 @@
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-projects">About The Projects</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -75,7 +75,7 @@ Currently LMS is built to run on unix operating systems running a GNOME desktop 
 * [Bash]()
 * [Batch]()
 
-<!-- GETTING STARTED -->
+<!-- MACOS -->
 
 # Getting Started
 
