@@ -1,24 +1,14 @@
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT SHIELDS -->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 
-<!-- [![MIT License][license-shield]][license-url] -->
-
 <!-- PROJECT LOGO -->
 
 <br />
 <p align="center">
-  <a href="https://github.com/Kellan2002/Kellans-Scripts">
+  <a href="https://github.com/wethinkcode/student_scrips">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -29,9 +19,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Report Bug</a>
+    <a href="https://github.com/wethinkcode/student_scrips/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Request Feature</a>
+    <a href="https://github.com/wethinkcode/student_scrips/issues">Request Feature</a>
     .
   </p>
 </p>
@@ -73,13 +63,15 @@ Currently LMS is built to run on unix operating systems running a GNOME desktop 
 ## Built With
 
 * [Bash]()
-* [Batch]()
 
-<!-- MACOS -->
+<!-- GETTING STARTED -->
 
 # Getting Started
 
 ## install_wtc_lms.sh
+
+<!-- WSL -->
+
 
 #### WSL:
 
@@ -102,6 +94,8 @@ cd ~/wtc-scripts
 ```bash
 bash ./install_wtc_lms
 ```
+
+<!-- LINUX -->
 
 #### Linux:
 
