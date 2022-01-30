@@ -8,7 +8,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/wethinkcode/student_scrips">
+  <a href="https://wethinkcode.co.za">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
