@@ -2,6 +2,11 @@
 
 # echo $1
 
+
+bin=$(echo $PATH)
+
+installs_local=$(whereis wtc-lms)
+
 if [ ! -z $1 ]
 then
 echo $1
@@ -20,8 +25,10 @@ WSL_CHECK=$(set | grep WSL)
 if [ -z "$WSL_CHECK" ]
 then
       echo "You are running this on Linux"
+      WSL_Bool=false
 else
       echo "You are running this in WSL"
+      WSL_Bool=true
 fi
 
 echo 
@@ -64,27 +71,47 @@ echo "Current User: $username"
 
 username=$(echo "$username" | sed 's/ /\\ /g' )
 
+
+if [ $WSL_Bool -eq true ]
 download_dir='/mnt/c/Users/'$username'/Downloads/'  # The directory for Windows' Download Folder
 listed=$(ls $download_dir | grep "*wtc-lms*")   # List of all files called "wtc-lms" in the Download's Folder
+then
+    if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
+        then 
+            echo
+        else
+            echo "$(tput setaf 1)wtc-lms is not in your download's directory"
+            echo "Please make sure you have downloaded the latest wtc-lms from slack and it is located in $download_dir with the file name 'wtc-lms'"
+            echo "'wtc-lms(1) will not work' $(tput sgr 0)"
+            down_dir=$(wslpath -w $download_dir)
+            echo "If"
+            whiptail --msgbox "The directory 'wtc-lms' should be stored in the currently opened file location in File Explorer" 10 20
 
-if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
-then 
-    # echo "You have wtc-lms in the right place"
-    echo
-else
-    echo "$(tput setaf 1)wtc-lms is not in your download's directory"
-    echo "Please make sure you have downloaded the latest wtc-lms from slack and it is located in $download_dir with the file name 'wtc-lms'"
-    echo "'wtc-lms(1) will not work' $(tput sgr 0)"
-    down_dir=$(wslpath -w $download_dir)
-    echo "If"
-    whiptail --msgbox "The directory 'wtc-lms' should be stored in the currently opened file location in File Explorer" 10 20
-
-    explorer.exe $down_dir
-    exit 1
+            explorer.exe $down_dir
+            exit 1
+        fi
 fi
 
-echo "Installing wtc-lms now"
+if [ $WSL_Bool -eq false ]
+then
+    download_dir='~/Downloads/'  # The directory for Linux' Download Folder
+    listed=$(ls $download_dir | grep "*wtc-lms*")
+    if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
+    then
+        echo
+    else
+        echo "$(tput setaf 1)wtc-lms is not in your download's directory"
+        echo "Please make sure you have downloaded the latest wtc-lms from slack and it is located in $download_dir with the file name 'wtc-lms'"
+        echo "'wtc-lms(1) will not work' $(tput sgr 0)"
+        whiptail --msgbox "The directory 'wtc-lms' should be stored in the currently opened file location in nautilus" 10 20
 
+        nautilus --browser ~/Downloads
+        exit 1
+    fi
+fi
+
+
+# echo "Installing wtc-lms now"
 
 # Checks user's email address
 while true
@@ -108,11 +135,6 @@ done
 echo
 
 sudo cp $download_dir/wtc-lms /usr/bin/
-
-if [ ! -d $HOME/.config ]
-then
-    mkdir $HOME/.config/
-fi
 
 if [ ! -d $HOME/.config/wtc ]
 then
@@ -141,7 +163,7 @@ case $ssh_start in
          echo "Your SSH Public key has been copied to your clipboard";
          if -z $IS_WSL
          then
-            cmd.exe /c start https://gitlab.wethinkcode.co.za/-/profile/keys;;
+            cmd.exe /c start https://gitlab.wethinkcode.co.za/-/profile/keys
          fi
 
     n|N) echo ;;
