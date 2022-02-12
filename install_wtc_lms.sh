@@ -72,10 +72,10 @@ echo "Current User: $username"
 username=$(echo "$username" | sed 's/ /\\ /g' )
 
 
-if [ $WSL_Bool -eq true ]
+# if $WSL_Bool -eq true
 download_dir='/mnt/c/Users/'$username'/Downloads/'  # The directory for Windows' Download Folder
 listed=$(ls $download_dir | grep "*wtc-lms*")   # List of all files called "wtc-lms" in the Download's Folder
-then
+# then
     if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
         then 
             echo
@@ -90,25 +90,25 @@ then
             explorer.exe $down_dir
             exit 1
         fi
-fi
+# fi
+s
+# if $WSL_Bool -eq false
+# then
+#     download_dir='~/Downloads/'  # The directory for Linux' Download Folder
+#     listed=$(ls $download_dir | grep "*wtc-lms*")
+#     if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
+#     then
+#         echo
+#     else
+#         echo "$(tput setaf 1)wtc-lms is not in your download's directory"
+#         echo "Please make sure you have downloaded the latest wtc-lms from slack and it is located in $download_dir with the file name 'wtc-lms'"
+#         echo "'wtc-lms(1) will not work' $(tput sgr 0)"
+#         whiptail --msgbox "The directory 'wtc-lms' should be stored in the currently opened file location in nautilus" 10 20
 
-if [ $WSL_Bool -eq false ]
-then
-    download_dir='~/Downloads/'  # The directory for Linux' Download Folder
-    listed=$(ls $download_dir | grep "*wtc-lms*")
-    if [ "$listed" = "wtc-lms" ] || [ -f "$download_dir/wtc-lms" ]
-    then
-        echo
-    else
-        echo "$(tput setaf 1)wtc-lms is not in your download's directory"
-        echo "Please make sure you have downloaded the latest wtc-lms from slack and it is located in $download_dir with the file name 'wtc-lms'"
-        echo "'wtc-lms(1) will not work' $(tput sgr 0)"
-        whiptail --msgbox "The directory 'wtc-lms' should be stored in the currently opened file location in nautilus" 10 20
-
-        nautilus --browser ~/Downloads
-        exit 1
-    fi
-fi
+#         nautilus --browser ~/Downloads
+#         exit 1
+#     fi
+# fi
 
 
 # echo "Installing wtc-lms now"
@@ -160,7 +160,7 @@ case $ssh_start in
     y|Y) echo "Follow the instructions";
          ssh-keygen;
          cat ~/.ssh/id_rsa.pub | clip.exe;
-         echo "Your SSH Public key has been copied to your clipboard";
+         echo "Your SSH Public key has been copied to your clipboard"
          if -z $IS_WSL
          then
             cmd.exe /c start https://gitlab.wethinkcode.co.za/-/profile/keys
