@@ -18,7 +18,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/Kellan2002/Kellans-Scripts">
+  <a href="https://github.com/wethinkcode/student_scrips">
     <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -29,9 +29,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Report Bug</a>
+    <a href="https://github.com/wethinkcode/student_scrips/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Kellan2002/Kellans-Scripts/issues">Request Feature</a>
+    <a href="https://github.com/wethinkcode/student_scrips/issues">Request Feature</a>
     .
   </p>
 </p>
