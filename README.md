@@ -1,109 +1,16 @@
-<!-- PROJECT SHIELDS -->
+#NOTE
+This has since been forked and has been kept updated to accommodate newer lms versions. You can find it here: https://github.com/wethinkcode/student_scrips
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
+# WTC_Scripts
+Some scripts I wrote to help me get through the reviews process quicker.
 
-<!-- PROJECT LOGO -->
-
-<br />
-<p align="center">
-  <a href="https://wethinkcode.co.za">
-    <img src="Images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Student Scripts</h3>
-
-<p align="center">
-    This repo includes scripts for wtc-lms
-    <br />
-    <br />
-    ·
-    <a href="https://github.com/wethinkcode/student_scrips/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/wethinkcode/student_scrips/issues">Request Feature</a>
-    .
-  </p>
-</p>
-
-<!-- TABLE OF CONTENTS -->
-
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-projects">About The Projects</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#wsl">WSL Install</a></li>
-        <li><a href="#linux">Linux</a></li>
-      </ul>
-    </li>
-    <!-- <li><a href="#usage">Usage</a></li> -->
-    <li><a href="#contributors">Contributors</a></li>
-    <li><a href="#todo-list">TODO-List</a></li>
-    <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-
-# About The Projects
-
-These projects are all built by WeThinkCode Students. 
-Currently LMS is built to run on unix operating systems running a GNOME desktop environment. So for the requirement of LMS, you can't expect the script to work if you don't meet those requirements.
-
-<!-- BUILT WITH -->
-
-## Built With
-
-* [Bash]()
-
-<!-- GETTING STARTED -->
-
-# Getting Started
-
-## install_wtc_lms.sh
-
-<!-- WSL -->
-
-
-#### WSL:
-
-1. Clone repository
-
-```bash
-git clone https://github.com/wethinkcode/student_scrips ~/wtc-scripts
-```
-
-2. Change to the directory the repo is now stored.
-
-```bash
-cd ~/wtc-scripts
-```
-
-3. Run script with bash.
-   
-   > *Do not run the script as root (i.e. with sudo)*
-
-```bash
-bash ./install_wtc_lms
-```
-
-<!-- LINUX -->
-
-#### Linux:
-
-1. Will be added **SOON**!!!
-
-## update_review_details.sh:
-
-> run `setup.sh` before use of these scripts
+# Do_review script 0.1
+__Setup:__
+ - Download : https://github.com/Rulofvdm/WTC_Scrips/archive/main.zip
+ - Extract
+ - Run setup.sh
+    
+__Use:__  
 
 - Go to `cd ~/`.
 
@@ -144,6 +51,13 @@ bash ./install_wtc_lms
   which will then be automatically posted.
 
 - After all that the repo is deleted as it would no longer be needed.
+  
+
+__run_histories.sh__:
+  - Well this is easy. Run it and witness all the histories of the pojects
+  
+__generate_slack_usernames.sh__:
+  - Oof, this one is nasty. So bascally it generates the slack usenames of the people you need to review. It does this from the file that update_review_details.sh creates. Usefull for the slack app, multidm, which is used to mass dm some people.
 
 ## **all_project_history.sh(extra)**:
 
@@ -207,6 +121,7 @@ bash ./install_wtc_lms
   
   . Get script to work with different WSL mount points
   
+
   . More to be expected
 
 [contributors-shield]: https://img.shields.io/github/contributors/wethinkcode/student_scrips.svg?style=for-the-badge
